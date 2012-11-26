@@ -1,0 +1,568 @@
+/*
+Theme Name: CAW 
+Theme URI: TK
+Description: Web site design for the Coalition on the Academic Workforce by Pam Roller.  
+Author: Pam Roller
+Author URI: TK
+Version: 0.01
+License: GNU General Public License
+License URI: license.txt
+*/
+
+/* Started with Toolbox */
+
+
+
+/* -------------------------------------------------------------- http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* =Structure
+-------------------------------------------------------------- */
+
+body{
+	background-image: url(images/pattern.png);
+}
+
+/* container */
+#page {
+	display: block;
+	margin: 0em;
+	background-color: white;
+}
+
+#primary {
+	float: left;
+	margin: 0 -240px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 240px 0 0;
+}
+
+
+/* content slider */
+#featured_slider{
+	float: left;
+	margin: 10px 0px;
+	position: relative;
+	border: 1px solid green;
+	width: 100%;
+	height: 150px;
+}
+
+ul#slider{
+	float: left;
+	margin-left: 10em;
+	width: 100%;
+}
+/* content slider */
+
+
+#main .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 220px;
+	padding: 0.5em;
+	
+	
+	/* gradient */
+	background: #e4e0c8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e4e0c8 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4e0c8), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e4e0c8 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e4e0c8 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e4e0c8 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e4e0c8 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f1de', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+/* footer */
+#colophon {
+	clear: both;
+	display: block;
+	width: 100%;
+	background-color:#8E8D6F;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/* Typography
+-------------------------------------------------------------- */
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	line-height: 1.5em;
+	color: #333333;
+	margin: 1em 2em;
+}
+
+a{
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #336666;
+}
+
+h1{
+	font-family: Times, serif;
+	font-size: 1.75em;
+	color: #669933;
+}
+
+h1.entry-title a{
+	margin: 1em 1em 0em 1em;
+	font-family: Times, serif;
+	color: #669933;
+}
+
+h1.entry-title a{
+	margin: 1em 1em 0em 1em;
+	font-family: Times, serif;
+	color: #669933;
+}
+
+h1.widget-title{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #CC6600;
+}
+
+
+/* =Header - PR
+-------------------------------------------------------------- */
+
+hgroup{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 46%, #e4e0c8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,#ffffff), color-stop(100%,#e4e0c8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 46%,#e4e0c8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 46%,#e4e0c8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 46%,#e4e0c8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 46%,#e4e0c8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f1de',GradientType=0 ); /* IE6-9 */
+
+	
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+/*	-moz-box-shadow: 2px 2px 5px #000;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	box-shadow: 2px 2px 5px #000; */
+	
+}
+
+#site-logo{
+	float: left;
+	padding: 0.25em 0em 0.20em 0em;
+	
+}
+
+
+#site-title a{
+
+}
+
+#site-description {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	line-height: 1;
+	color: #CC6600;
+	text-shadow: 2px 2px 7px #BCBEC0; 
+	margin-top: 3.7em;
+	min-width: 900px;
+/*	background-color: rgba(254, 254, 254, 0.65);  */
+/*	border-top: 1px solid #B2B083;
+	border-bottom:1px solid #B2B083; */
+}
+
+
+/* Menu
+-------------------------------------------------------------- */
+
+
+#access {
+	background: #8E8D6F;
+	display: block;
+	float: left;
+	margin: 0 auto 0em;
+	width: 100%;
+}
+#access ul {
+	list-style: none;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	text-decoration: none;
+	background-color: #8E8D6F;
+	border-right: 1px solid #7A7857;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	color: #fff;
+
+/*TRANSISTIONS*/
+-webkit-transition: background 0.5s ease;
+   -moz-transition: background 0.5s ease;
+     -o-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+        transition: background 0.5s ease;
+}
+
+#access li:hover > a,
+#access ul ul :hover > a {
+	background: #7A7857;
+}
+#access ul ul a:hover {
+	background: #7A7857;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+/*homework 11-11-12*/
+
+article{
+	padding: 1em;
+}
+
+ul.post-meta{
+	margin-left: 1em;
+}
+
+.entry-content{
+	margin: 0em 1em;
+
+}
+
+/*homework 11-11-12*/
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous {
+	float: left;
+	width: 50%;
+}
+#content nav .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content #nav-above {
+	display: none;
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+#searchform label {
+	display: none;
+}
+#searchform input#s {
+	width: 60%;
+}
+input[type=text],
+input#s {
+	margin: 0 1em 0 0;
+	width: 60%;
+}
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget {
+	display: block;
+}
+.widget-area .widget_search {
+	overflow: hidden;
+}
+.widget-area .widget_search input {
+	float: left;
+}
+
