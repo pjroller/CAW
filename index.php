@@ -21,6 +21,38 @@ get_header(); ?>
 
 				<?php toolbox_content_nav( 'nav-above' ); ?>
 
+		
+		
+		
+			
+			
+			
+				<?php
+					//The Query
+					$my_slider_param = array (
+						'cat' => '5',
+						'posts_count' => '5',
+					);
+				$the_query = new WP_Query( $my_slider_param );
+
+				//The Loop
+				if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				
+					<a href="<?php $my_slider_url = get_post_custom_values('url');
+						echo $my_slider_url[0];?>" title=" <?php the_title(); ?>"><?php the_post_thumbnail('slider'); ?></a>
+						<?php
+						endwhile; endif;
+
+						// Reset Post Data
+						wp_reset_postdata();
+						?>
+			
+				
+			
+			
+			
+			
+			
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 

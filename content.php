@@ -15,7 +15,7 @@
 		<?php endif; ?>
 	
 		
-		<?php the_meta(); ?>
+	
 	
 	
 	</header><!-- .entry-header -->

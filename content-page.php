@@ -12,6 +12,10 @@
 
 
 
+
+
+
+		
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	
 		<?php the_meta(); ?>
@@ -26,3 +30,8 @@
 		<?php edit_post_link( __( 'Edit', 'toolbox' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+
+
+
