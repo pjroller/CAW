@@ -66,29 +66,44 @@ table {
 
 /* =Structure
 -------------------------------------------------------------- */
+html{
+	height: 100%;
+}
+
 
 body{
 	background-image: url(images/pattern.png);
+	height: 100%;
 }
+
+
 
 /* container */
 #page {
-	display: block;
-	margin: 0em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 980px;
+	min-height: 100%;
 	background-color: white;
+	position: relative;
 }
+
 
 #primary {
 	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+	width: 740px;
+	
 }
+
+
 #content {
-	margin: 0 240px 0 0;
+	padding: 0px;
+	height: 100%;
+	background-color: white;
 }
 
 
-/* content slider */
+/* content slider - styled in php file so this isn't working*/
 #featured_slider{
 	float: left;
 	margin: 10px 0px;
@@ -108,10 +123,9 @@ ul#slider{
 
 #main .widget-area {
 	float: right;
-	overflow: hidden;
 	width: 220px;
-	padding: 0.5em;
-	
+	height: 100%;
+	padding: 10px;
 	
 	/* gradient */
 	background: #e4e0c8; /* Old browsers */
@@ -126,10 +140,15 @@ ul#slider{
 
 /* footer */
 #colophon {
-	clear: both;
+	
 	display: block;
 	width: 100%;
 	background-color:#8E8D6F;
+	clear: both;
+	 position: relative;
+	 z-index: 10;
+	 height: 3em;
+	 margin-top: -3em;
 }
 
 /* Increase the size of the content area for templates without sidebars */
@@ -247,12 +266,11 @@ hgroup{
 
 #site-description {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 2.5em;
-	line-height: 1;
+	font-size: 2.70em;
 	color: #CC6600;
 	text-shadow: 2px 2px 7px #BCBEC0; 
-	margin-top: 3.7em;
-	min-width: 900px;
+	margin-top: 3.4em;
+	
 /*	background-color: rgba(254, 254, 254, 0.65);  */
 /*	border-top: 1px solid #B2B083;
 	border-bottom:1px solid #B2B083; */
