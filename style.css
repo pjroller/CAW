@@ -140,15 +140,11 @@ ul#slider{
 
 /* footer */
 #colophon {
-	
 	display: block;
 	width: 100%;
-	background-color:#8E8D6F;
+	background-color:;
 	clear: both;
-	 position: relative;
-	 z-index: 10;
-	 height: 3em;
-	 margin-top: -3em;
+	 
 }
 
 /* Increase the size of the content area for templates without sidebars */
