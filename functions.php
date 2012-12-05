@@ -425,6 +425,38 @@ function eric_gallery_shortcode($attr) {
 
 
 
+//trying to add custom post type
+
+
+function my_custom_post_report() {
+	$labels = array(
+		'name'               => _x( 'Reports', 'post type general name' ),
+		'singular_name'      => _x( 'Report', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'book' ),
+		'add_new_item'       => __( 'Add New Report' ),
+		'edit_item'          => __( 'Edit Report' ),
+		'new_item'           => __( 'New Report' ),
+		'all_items'          => __( 'All Reports' ),
+		'view_item'          => __( 'View Report' ),
+		'search_items'       => __( 'Search Report' ),
+		'not_found'          => __( 'No reports found' ),
+		'not_found_in_trash' => __( 'No reports found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Reports'
+	
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our reports and report specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+		'has_archive'   => true,
+	
+	);
+	register_post_type( 'report', $args );	
+}
+add_action( 'init', 'my_custom_post_report' );
 
 
 
