@@ -326,6 +326,10 @@ add_filter( 'attachment_link', 'toolbox_enhanced_image_navigation' );
  * This theme was built with PHP, Semantic HTML, CSS, love, and a Toolbox.
  */
 
+
+
+
+
 /**
  * Below is code from class, to edit the gallery and add a slider, etc.
  */
@@ -425,7 +429,7 @@ function eric_gallery_shortcode($attr) {
 
 
 
-//trying to add custom post type
+//adding custom post type
 
 
 function my_custom_post_report() {
@@ -458,5 +462,16 @@ function my_custom_post_report() {
 }
 add_action( 'init', 'my_custom_post_report' );
 
+
+/**
+ * Adding thumbnails to posts - Friedman book pg. 192 - pr
+ */
+
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'slider', 530, 215, true );
+	add_image_size( 'post-thumb', 260, 175, true );
+	add_image_size( 'sm-post-thumb', 65, 50, true );
+	add_image_size( 'page-featured-image', 530, 95, true );
+	add_image_size( 'fullwidth-featured-image', 820, 95, true );
 
 

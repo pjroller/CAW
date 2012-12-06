@@ -13,7 +13,8 @@
 		</div><!-- .entry-meta -->
 
 		
-		<?php the_meta(); ?>
+	<!-- adding this makes the thumbnail show up, since it was registered in functions -->
+		<?php the_post_thumbnail();?>
 
 
 	</header><!-- .entry-header -->

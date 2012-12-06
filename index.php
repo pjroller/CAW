@@ -56,6 +56,9 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
+<!-- adding post-thumb below -pr -->
+<?php the_post_thumbnail( 'post-thumb' ); ?>
+
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to overload this in a child theme then include a file
@@ -63,6 +66,10 @@ get_header(); ?>
 						 */
 						get_template_part( 'content', get_post_format() );
 					?>
+
+<!-- adding post-thumb below -pr -->
+<?php if( !get_the_post_thumbnail() ) the_excerpt(); ?>
+
 
 				<?php endwhile; ?>
 

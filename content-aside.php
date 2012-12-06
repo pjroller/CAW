@@ -14,6 +14,9 @@
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'toolbox' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 	</header><!-- .entry-header -->
 
+
+
+
 	<?php if ( is_search() ) : // Only display Excerpts for search pages ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
@@ -24,6 +27,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'toolbox' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
+
 
 	<footer class="entry-meta">
 		<?php toolbox_posted_on(); ?>

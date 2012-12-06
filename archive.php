@@ -40,7 +40,11 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-
+					
+					<!-- adding post_thumbnail as in Friedman book ch. 14 -->
+					<?php the_post_thumbnail( 'post-thumb' ); ?>
+					
+					
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to overload this in a child theme then include a file
