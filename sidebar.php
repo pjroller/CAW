@@ -22,6 +22,7 @@
 					<h1 class="widget-title"><?php _e( 'Archives', 'toolbox' ); ?></h1>
 					<ul>
 						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+						<?php the_post_thumbnail( 'sm-post-thumbnail' ); ?>
 					</ul>
 					
 				</aside>
