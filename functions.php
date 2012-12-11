@@ -472,6 +472,6 @@ add_action( 'init', 'my_custom_post_report' );
 	add_image_size( 'post-thumb', 260, 175, true );
 	add_image_size( 'sm-post-thumb', 65, 50, true );
 	add_image_size( 'page-featured-image', 530, 95, true );
-	add_image_size( 'fullwidth-featured-image', 820, 95, true );
+	add_image_size( 'fullwidth-featured-image', 600, 95, true );
 
 

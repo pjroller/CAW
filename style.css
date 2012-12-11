@@ -189,7 +189,7 @@ p{
 	font-size: .85em;
 	line-height: 1.5em;
 	color: #333333;
-	margin: 1em 2em;
+	margin: 20px 15px;
 }
 
 a{
@@ -516,6 +516,10 @@ img.alignright {
 }
 .wp-smiley {
 	margin: 0;
+}
+
+img.attachment-sm-post-thumb.wp-post-img {
+	border: 1px solid blue;
 }
 
 
